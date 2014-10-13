@@ -1,0 +1,14 @@
+<!-- index.ejs -->
+
+<% include partials/header %>
+
+<h1>Graphic Machine Maker</h1>
+<form action="/image" enctype="multipart/form-data" method="post">
+  <input id="image" name="image" type="file"><br>
+  <input type="submit" value="Upload">
+</form>
+  	
+<p>Status: <%= status %></p>
+<img src="<%= newImage %>">
+
+<% include partials/footer %>
